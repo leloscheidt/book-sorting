@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<!-- 
+		1 - The key of the entry should be the name of the attribute to sort
+		    and the value of the entry should be the direction of sorting.
+		
+		2 - The order of the entries within the file is the order precedence of sorting. 
+			So writing
+			 <entry key="author">descending</entry>
+			 <entry key="title">ascending</entry>
+			 
+			Is different than writing 
+			 <entry key="title">ascending</entry>
+			 <entry key="author">descending</entry>
+		
+		3 - If, for one key none comparator is found, the condition is ignored.
+		
+		4 - The entries values should be 'ascending' and 'descending' only, 
+		    other values will be interpreter as 'ascending' by the application.
+-->
+<properties>
+	<comment>Configuration file of the sorting service, read comments for more details.</comment>
+	
+	<entry key="title">ascending</entry>
+	<entry key="author">ascending</entry>
+	
+</properties>
